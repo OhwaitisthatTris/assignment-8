@@ -10,6 +10,7 @@ class Queue(SequentialCollection):
     def push(self, item):
         self._data.append(item)
  
+
     def pop(self):
         if self.is_empty:
             raise IndexError("pop from empty queue")
